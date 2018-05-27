@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="世界如此美好">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2018/05/index.html">
 <meta property="og:site_name" content="世界如此美好">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -115,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/archives/2018/05/"/>
 
 
 
 
 
-  <title>世界如此美好</title>
+  <title>归档 | 世界如此美好</title>
   
 
 
@@ -140,8 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,171 +213,75 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
+
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 1 篇日志。 继续努力。
+      </span>
+
       
 
-  
+        
+        
+        
 
-  
-  
-  
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MRWisme">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界如此美好">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/05/27/Linux下通过phpize安装php扩展/" itemprop="url">
+              
+                <span itemprop="name">Linux下通过phpize安装php扩展</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/27/Linux下通过phpize安装php扩展/" itemprop="url">Linux下通过phpize安装php扩展</a></h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-27T15:14:31+08:00">
-                2018-05-27
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-05-27T15:14:31+08:00"
+              content="2018-05-27" >
+          05-27
+        </time>
+      </div>
 
-            
+    </header>
+  </article>
 
-            
-          </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHP/" itemprop="url" rel="index">
-                    <span itemprop="name">PHP</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/05/27/Linux下通过phpize安装php扩展/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/05/27/Linux下通过phpize安装php扩展/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
       
-      
 
-      
-        
-          
-            <h2 id="1-扩展目录下执行-usr-local-php-bin-phpize"><a href="#1-扩展目录下执行-usr-local-php-bin-phpize" class="headerlink" title="1.扩展目录下执行/usr/local/php/bin/phpize"></a>1.扩展目录下执行/usr/local/php/bin/phpize</h2><p>  如果报错如下</p>
-<blockquote>
-<p>1.Cannot find autoconf. Please check your autoconf installation and the<br>2.$PHP_AUTOCONF environment variable. Then, rerun this script.</p>
-</blockquote>
-<p>   可通过yum –y install autoconf解决<br>   这个步骤成功扩展目录下会生成configure文件夹</p>
-<h2 id="2-执行-configure-–with-php-config-usr-local-php-bin-php-config"><a href="#2-执行-configure-–with-php-config-usr-local-php-bin-php-config" class="headerlink" title="2.执行./configure  –with-php-config=/usr/local/php/bin/php-config"></a>2.执行./configure  –with-php-config=/usr/local/php/bin/php-config</h2><pre><code>不同扩展可能需要其他配置，根据提示信息进行配置即可
-</code></pre><h2 id="3-make-amp-amp-make-install"><a href="#3-make-amp-amp-make-install" class="headerlink" title="3.make &amp;&amp; make install"></a>3.make &amp;&amp; make install</h2><pre><code>编译成功会产生对应so文件，如果不知道so文件名称，编译信息中会提示
-</code></pre><p>如:<br><img src="/images/phpsoket.png" alt=""></p>
-<h2 id="4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名"><a href="#4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名" class="headerlink" title="4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)"></a>4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)</h2><h2 id="5-查看扩展是否按照成功"><a href="#5-查看扩展是否按照成功" class="headerlink" title="5.查看扩展是否按照成功"></a>5.查看扩展是否按照成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	phpinfo();</span><br></pre></td></tr></table></figure>或<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php –m | grep sockets</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-  </section>
 
   
+
 
 
           </div>

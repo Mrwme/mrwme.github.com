@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="PHP," />
 
 
 
@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="世界如此美好">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1.扩展目录下执行/usr/local/php/bin/phpize  如果报错如下  1.Cannot find autoconf. Please check your autoconf installation and the2.$PHP_AUTOCONF environment variable. Then, rerun this script.     可通过yum –y install">
+<meta name="keywords" content="PHP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux下通过phpize安装php扩展">
+<meta property="og:url" content="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/index.html">
 <meta property="og:site_name" content="世界如此美好">
+<meta property="og:description" content="1.扩展目录下执行/usr/local/php/bin/phpize  如果报错如下  1.Cannot find autoconf. Please check your autoconf installation and the2.$PHP_AUTOCONF environment variable. Then, rerun this script.     可通过yum –y install">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/phpsoket.png">
+<meta property="og:updated_time" content="2018-05-27T07:58:34.069Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="世界如此美好">
+<meta name="twitter:title" content="Linux下通过phpize安装php扩展">
+<meta name="twitter:description" content="1.扩展目录下执行/usr/local/php/bin/phpize  如果报错如下  1.Cannot find autoconf. Please check your autoconf installation and the2.$PHP_AUTOCONF environment variable. Then, rerun this script.     可通过yum –y install">
+<meta name="twitter:image" content="http://yoursite.com/images/phpsoket.png">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/"/>
 
 
 
 
 
-  <title>世界如此美好</title>
+  <title>Linux下通过phpize安装php扩展 | 世界如此美好</title>
   
 
 
@@ -140,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/27/Linux下通过phpize安装php扩展/" itemprop="url">Linux下通过phpize安装php扩展</a></h1>
+          <h1 class="post-title" itemprop="name headline">Linux下通过phpize安装php扩展</h1>
         
 
         <div class="post-meta">
@@ -330,9 +334,7 @@
       
 
       
-        
-          
-            <h2 id="1-扩展目录下执行-usr-local-php-bin-phpize"><a href="#1-扩展目录下执行-usr-local-php-bin-phpize" class="headerlink" title="1.扩展目录下执行/usr/local/php/bin/phpize"></a>1.扩展目录下执行/usr/local/php/bin/phpize</h2><p>  如果报错如下</p>
+        <h2 id="1-扩展目录下执行-usr-local-php-bin-phpize"><a href="#1-扩展目录下执行-usr-local-php-bin-phpize" class="headerlink" title="1.扩展目录下执行/usr/local/php/bin/phpize"></a>1.扩展目录下执行/usr/local/php/bin/phpize</h2><p>  如果报错如下</p>
 <blockquote>
 <p>1.Cannot find autoconf. Please check your autoconf installation and the<br>2.$PHP_AUTOCONF environment variable. Then, rerun this script.</p>
 </blockquote>
@@ -342,8 +344,6 @@
 </code></pre><p>如:<br><img src="/images/phpsoket.png" alt=""></p>
 <h2 id="4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名"><a href="#4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名" class="headerlink" title="4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)"></a>4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)</h2><h2 id="5-查看扩展是否按照成功"><a href="#5-查看扩展是否按照成功" class="headerlink" title="5.查看扩展是否按照成功"></a>5.查看扩展是否按照成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	phpinfo();</span><br></pre></td></tr></table></figure>或<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php –m | grep sockets</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -358,14 +358,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/PHP/" rel="tag"># PHP</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -375,10 +381,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -386,6 +393,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="2018/05/27/Linux下通过phpize安装php扩展/"
+           data-title="Linux下通过phpize安装php扩展" data-url="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/">
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -406,8 +424,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -467,6 +494,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-扩展目录下执行-usr-local-php-bin-phpize"><span class="nav-number">1.</span> <span class="nav-text">1.扩展目录下执行/usr/local/php/bin/phpize</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-执行-configure-–with-php-config-usr-local-php-bin-php-config"><span class="nav-number">2.</span> <span class="nav-text">2.执行./configure  –with-php-config=/usr/local/php/bin/php-config</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-make-amp-amp-make-install"><span class="nav-number">3.</span> <span class="nav-text">3.make &amp;&amp; make install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名"><span class="nav-number">4.</span> <span class="nav-text">4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-查看扩展是否按照成功"><span class="nav-number">5.</span> <span class="nav-text">5.查看扩展是否按照成功</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -607,6 +650,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
