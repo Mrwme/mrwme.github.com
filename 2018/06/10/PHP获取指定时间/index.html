@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="1.扩展目录下执行/usr/local/php/bin/phpize  如果报错如下  1.Cannot find autoconf. Please check your autoconf installation and the2.$PHP_AUTOCONF environment variable. Then, rerun this script.     可通过yum –y install">
+<meta name="description" content="1、获取当前时间几天前(后)、几月前(后)、几年前(后)   初始化DateTime()1$date_time = new DateTime();    1天前(后)12$date_time-&amp;gt;modify(&amp;apos;-1 days&amp;apos;); //一天前$date_time-&amp;gt;modify(&amp;apos;+1 days&amp;apos;); //一天后    1月前(后)12$date">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux下通过phpize安装php扩展">
-<meta property="og:url" content="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/index.html">
+<meta property="og:title" content="PHP获取指定时间">
+<meta property="og:url" content="http://yoursite.com/2018/06/10/PHP获取指定时间/index.html">
 <meta property="og:site_name" content="世界如此美好">
-<meta property="og:description" content="1.扩展目录下执行/usr/local/php/bin/phpize  如果报错如下  1.Cannot find autoconf. Please check your autoconf installation and the2.$PHP_AUTOCONF environment variable. Then, rerun this script.     可通过yum –y install">
+<meta property="og:description" content="1、获取当前时间几天前(后)、几月前(后)、几年前(后)   初始化DateTime()1$date_time = new DateTime();    1天前(后)12$date_time-&amp;gt;modify(&amp;apos;-1 days&amp;apos;); //一天前$date_time-&amp;gt;modify(&amp;apos;+1 days&amp;apos;); //一天后    1月前(后)12$date">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/phpsoket.png">
-<meta property="og:updated_time" content="2018-05-27T07:58:34.069Z">
+<meta property="og:updated_time" content="2018-06-10T07:38:05.775Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux下通过phpize安装php扩展">
-<meta name="twitter:description" content="1.扩展目录下执行/usr/local/php/bin/phpize  如果报错如下  1.Cannot find autoconf. Please check your autoconf installation and the2.$PHP_AUTOCONF environment variable. Then, rerun this script.     可通过yum –y install">
-<meta name="twitter:image" content="http://yoursite.com/images/phpsoket.png">
+<meta name="twitter:title" content="PHP获取指定时间">
+<meta name="twitter:description" content="1、获取当前时间几天前(后)、几月前(后)、几年前(后)   初始化DateTime()1$date_time = new DateTime();    1天前(后)12$date_time-&amp;gt;modify(&amp;apos;-1 days&amp;apos;); //一天前$date_time-&amp;gt;modify(&amp;apos;+1 days&amp;apos;); //一天后    1月前(后)12$date">
 
 
 
@@ -122,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/10/PHP获取指定时间/"/>
 
 
 
 
 
-  <title>Linux下通过phpize安装php扩展 | 世界如此美好</title>
+  <title>PHP获取指定时间 | 世界如此美好</title>
   
 
 
@@ -235,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/10/PHP获取指定时间/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MRWisme">
@@ -252,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux下通过phpize安装php扩展</h1>
+          <h1 class="post-title" itemprop="name headline">PHP获取指定时间</h1>
         
 
         <div class="post-meta">
@@ -264,8 +262,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-27T15:14:31+08:00">
-                2018-05-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-10T15:01:59+08:00">
+                2018-06-10
               </time>
             
 
@@ -305,8 +303,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/27/Linux下通过phpize安装php扩展/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/05/27/Linux下通过phpize安装php扩展/" itemprop="commentCount"></span>
+                <a href="/2018/06/10/PHP获取指定时间/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/06/10/PHP获取指定时间/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -334,15 +332,9 @@
       
 
       
-        <h2 id="1-扩展目录下执行-usr-local-php-bin-phpize"><a href="#1-扩展目录下执行-usr-local-php-bin-phpize" class="headerlink" title="1.扩展目录下执行/usr/local/php/bin/phpize"></a>1.扩展目录下执行/usr/local/php/bin/phpize</h2><p>  如果报错如下</p>
-<blockquote>
-<p>1.Cannot find autoconf. Please check your autoconf installation and the<br>2.$PHP_AUTOCONF environment variable. Then, rerun this script.</p>
-</blockquote>
-<p>   可通过yum –y install autoconf解决<br>   这个步骤成功扩展目录下会生成configure文件夹</p>
-<h2 id="2-执行-configure-–with-php-config-usr-local-php-bin-php-config"><a href="#2-执行-configure-–with-php-config-usr-local-php-bin-php-config" class="headerlink" title="2.执行./configure  –with-php-config=/usr/local/php/bin/php-config"></a>2.执行./configure  –with-php-config=/usr/local/php/bin/php-config</h2><pre><code>不同扩展可能需要其他配置，根据提示信息进行配置即可
-</code></pre><h2 id="3-make-amp-amp-make-install"><a href="#3-make-amp-amp-make-install" class="headerlink" title="3.make &amp;&amp; make install"></a>3.make &amp;&amp; make install</h2><pre><code>编译成功会产生对应so文件，如果不知道so文件名称，编译信息中会提示
-</code></pre><p>如:<br><img src="/images/phpsoket.png" alt=""></p>
-<h2 id="4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名"><a href="#4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名" class="headerlink" title="4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)"></a>4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)</h2><h2 id="5-查看扩展是否按照成功"><a href="#5-查看扩展是否按照成功" class="headerlink" title="5.查看扩展是否按照成功"></a>5.查看扩展是否按照成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">	phpinfo();</span><br></pre></td></tr></table></figure>或<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php –m | grep sockets</span><br></pre></td></tr></table></figure>
+        <h2 id="1、获取当前时间几天前-后-、几月前-后-、几年前-后"><a href="#1、获取当前时间几天前-后-、几月前-后-、几年前-后" class="headerlink" title="1、获取当前时间几天前(后)、几月前(后)、几年前(后)"></a>1、获取当前时间几天前(后)、几月前(后)、几年前(后)</h2><p>   初始化DateTime()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$date_time = new DateTime();</span><br></pre></td></tr></table></figure><br>    1天前(后)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$date_time-&gt;modify(&apos;-1 days&apos;); //一天前</span><br><span class="line">$date_time-&gt;modify(&apos;+1 days&apos;); //一天后</span><br></pre></td></tr></table></figure><br>    1月前(后)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$date_time-&gt;modify(&apos;-1 months&apos;); //一月前</span><br><span class="line">$date_time-&gt;modify(&apos;+1 months&apos;); //一月后</span><br></pre></td></tr></table></figure><br>    1月前(后)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$date_time-&gt;modify(&apos;-1 years&apos;); //一月前</span><br><span class="line">$date_time-&gt;modify(&apos;+1 years&apos;); //一月后</span><br></pre></td></tr></table></figure>    </p>
+<h2 id="2、获取指定时间几天前-后-、几月前-后-、几年前-后"><a href="#2、获取指定时间几天前-后-、几月前-后-、几年前-后" class="headerlink" title="2、获取指定时间几天前(后)、几月前(后)、几年前(后)"></a>2、获取指定时间几天前(后)、几月前(后)、几年前(后)</h2><p>   指定对应时间即可、其它与上述相同<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$date_time =DateTime::createFromFormat(&apos;Y-m-d H:i:s&apos;,&apos;2018-06-10 15:10:09&apos;);</span><br></pre></td></tr></table></figure></p>
+<h2 id="3、将获得的时间按指定内容格式输出"><a href="#3、将获得的时间按指定内容格式输出" class="headerlink" title="3、将获得的时间按指定内容格式输出"></a>3、将获得的时间按指定内容格式输出</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $date_time-&gt;format(&apos;Y-m-d H:i:s&apos;);</span><br></pre></td></tr></table></figure>也可以获得时间戳<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $date_time-&gt;getTimestamp();</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -373,15 +365,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/05/27/Linux下通过phpize安装php扩展/" rel="next" title="Linux下通过phpize安装php扩展">
+                <i class="fa fa-chevron-left"></i> Linux下通过phpize安装php扩展
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/10/PHP获取指定时间/" rel="prev" title="PHP获取指定时间">
-                PHP获取指定时间 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -412,8 +404,8 @@
 
   
     <div class="comments" id="comments">
-      <div class="ds-thread" data-thread-key="2018/05/27/Linux下通过phpize安装php扩展/"
-           data-title="Linux下通过phpize安装php扩展" data-url="http://yoursite.com/2018/05/27/Linux下通过phpize安装php扩展/">
+      <div class="ds-thread" data-thread-key="2018/06/10/PHP获取指定时间/"
+           data-title="PHP获取指定时间" data-url="http://yoursite.com/2018/06/10/PHP获取指定时间/">
       </div>
     </div>
 
@@ -520,7 +512,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-扩展目录下执行-usr-local-php-bin-phpize"><span class="nav-number">1.</span> <span class="nav-text">1.扩展目录下执行/usr/local/php/bin/phpize</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-执行-configure-–with-php-config-usr-local-php-bin-php-config"><span class="nav-number">2.</span> <span class="nav-text">2.执行./configure  –with-php-config=/usr/local/php/bin/php-config</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-make-amp-amp-make-install"><span class="nav-number">3.</span> <span class="nav-text">3.make &amp;&amp; make install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-在php-ini在加入extension-sockets-so-举例，改成实际对对应的so文件名"><span class="nav-number">4.</span> <span class="nav-text">4.在php.ini在加入extension=sockets.so(举例，改成实际对对应的so文件名)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-查看扩展是否按照成功"><span class="nav-number">5.</span> <span class="nav-text">5.查看扩展是否按照成功</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、获取当前时间几天前-后-、几月前-后-、几年前-后"><span class="nav-number">1.</span> <span class="nav-text">1、获取当前时间几天前(后)、几月前(后)、几年前(后)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、获取指定时间几天前-后-、几月前-后-、几年前-后"><span class="nav-number">2.</span> <span class="nav-text">2、获取指定时间几天前(后)、几月前(后)、几年前(后)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、将获得的时间按指定内容格式输出"><span class="nav-number">3.</span> <span class="nav-text">3、将获得的时间按指定内容格式输出</span></a></li></ol></div>
             
 
           </div>
